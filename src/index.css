@@ -1,15 +1,20 @@
-/* New expense */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+
+.app {
+  background-color: #5c48d3;
+  width: 1430px;
+  height: 1600px;
+}
 
 .mainContainer {
-  background-color: #5c48d3;
-  background-size: cover;
   display: flex;
   justify-content: center;
 }
 
 .newExpenseInput {
   background-color: white;
-  margin-top: 30px;
+  margin: 30px 15px 0px 15px;
   width: 33%;
   border-radius: 5px;
   display: flex;
@@ -19,11 +24,14 @@
 
 .mainContainer .newExpenseInput h1 {
   color: #5c48d3;
+  font-weight: 300;
+  font-family: "Source sans pro";
+  font-size: 35px;
+  opacity: 0.5;
 }
 
 .mainContainer .newExpenseInput form {
   width: 90%;
-  margin-top: 20px;
 }
 
 .mainContainer .newExpenseInput form input {
@@ -32,6 +40,7 @@
   margin-bottom: 15px;
   height: 25px;
   border: 1px solid #e0e0e0;
+  padding-left: 8px;
 }
 
 .mainContainer .newExpenseInput form button {
@@ -43,4 +52,161 @@
   margin-top: 20px;
   margin-bottom: 20px;
   opacity: 0.5;
+  margin-left: 25%;
+}
+
+.expensesContainer,
+.usersContainer {
+  background-color: white;
+  margin: 30px 10px 0px 10px;
+  width: 33%;
+  border-radius: 5px;
+}
+
+.expensesContainer h1,
+.usersContainer h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #5c48d3;
+  font-weight: 300;
+  font-family: "Source sans pro";
+  font-size: 35px;
+  opacity: 0.5;
+}
+
+.expensesContainer .expensesArray ul {
+  margin: 0;
+  padding: 0;
+}
+
+.expensesArray .navExpenses,
+.usersArray .navUsers {
+  display: flex;
+  margin-top: 10%;
+}
+
+.expensesArray .navExpenses .user {
+  margin-left: 5%;
+  width: 20px;
+}
+
+.expensesArray .navExpenses .description {
+  margin-left: 15%;
+  margin-right: 10%;
+  width: 45%;
+}
+
+.usersArray .navUsers .user {
+  margin-left: 5%;
+  width: 74%;
+}
+
+.usersArray .user,
+.usersArray .expenses,
+.expensesArray .user,
+.expensesArray .description,
+.expensesArray .amount {
+  color: #5c48d3;
+  display: inline;
+  display: inline-flex;
+  flex-direction: row;
+  font-family: "Source sans pro";
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.expensesContainer .expensesArray ul {
+  margin-top: 20px;
+}
+
+.listExpenses li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  font-family: "Source sans pro";
+  font-weight: 300;
+  font-size: 15px;
+}
+.listExpenses .userList,
+.listExpenses .descriptionList,
+.listExpenses .amountList {
+  color: #5c48d3;
+  display: inline;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.listExpenses .userList {
+  width: 20px;
+  margin-left: 5%;
+}
+
+.listExpenses .descriptionList {
+  width: 45%;
+  margin-left: 15%;
+  margin-right: 10%;
+}
+
+.amountList {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.amountList .amountItem {
+  width: 40px;
+  font-family: "Lato";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+.amountList span {
+  display: inline-flex;
+}
+
+.totalExpenses {
+  display: inline-flex;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.totalExpenses span {
+  color: #5c48d3;
+  font-family: "Source sans pro";
+  font-weight: 700;
+}
+
+.totalContainer span {
+  color: #5c48d3;
+  font-family: "Source sans pro";
+  font-weight: 700;
+}
+
+.totalExpenses .reduce {
+  font-family: "Lato";
+  font-weight: 700;
+  color: #5c48d3;
+  margin-left: 5px;
+}
+
+.userList .userName {
+  font-size: 15px;
+  color: #5c48d3;
+  list-style-type: none;
+  width: 90px;
+  margin-left: 5%;
+}
+
+.usersArray .userList ul li {
+  margin-bottom: 20px;
+}
+
+.usersArray .userList {
+  color: #5c48d3;
+  font-family: "Source sans pro";
+  font-weight: 300;
+  font-size: 15px;
+  margin: 20px 20px 20px 20px;
+  width: 50px;
 }

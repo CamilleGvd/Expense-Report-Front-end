@@ -1,14 +1,15 @@
 import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import NewExpense from "./NewExpense";
-import Expense from "./Expense";
 
 class App extends React.Component {
   render = () => {
     return (
-      <div>
-        {/* <NewExpense />; */}
-        <Expense />
-      </div>
+      <Router>
+        <div className="app">
+          <Route exact path="/" component={NewExpense} />
+        </div>
+      </Router>
     );
   };
 }
