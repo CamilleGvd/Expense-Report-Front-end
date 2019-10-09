@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 
-.app {
+body {
   background-color: #5c48d3;
+}
+
+.app {
   width: 1430px;
   height: 1600px;
 }
@@ -181,6 +184,7 @@
   color: #5c48d3;
   font-family: "Source sans pro";
   font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .totalExpenses .reduce {
@@ -188,13 +192,14 @@
   font-weight: 700;
   color: #5c48d3;
   margin-left: 5px;
+  letter-spacing: 2px;
 }
 
 .userList .userName {
   font-size: 15px;
   color: #5c48d3;
   list-style-type: none;
-  width: 90px;
+  /* width: 90px; */
   margin-left: 5%;
 }
 
@@ -208,5 +213,4 @@
   font-weight: 300;
   font-size: 15px;
   margin: 20px 20px 20px 20px;
-  width: 50px;
 }

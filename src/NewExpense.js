@@ -11,7 +11,6 @@ export default class NewExpense extends React.Component {
     expenses: [],
     newExpenses: "newExpenses"
   };
-  "";
 
   getExpense = async () => {
     const response = await axios.get(
